@@ -26,3 +26,5 @@ con la siguiente estructura
 }
 
 Es requerido un TOKEN el cual va en los heades el cual es el siguiente.
+token : rMKEVjXUjuFnnFnHRp6J9hjrLS4EdBXT7ox3kBs4pSPzCRPZ86
+ Content-Type : application/json
