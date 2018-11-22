@@ -22,3 +22,10 @@ Route::get('alumnos/{id}','AlumnosController@show');
 Route::post('alumnos/create','AlumnosController@store');
 Route::put('alumnos/update/{id}','AlumnosController@update');
 Route::delete('alumnos/delete/{id}','AlumnosController@destroy');
+
+
+Route::get('empleados', 'EmpleadosController@index');
+Route::get('empleados/{id}', 'EmpleadosController@show');
+Route::post('empleados', 'EmpleadosController@store');
+Route::put('empleados/{id}', 'EmpleadosController@update');
+Route::delete('empleados/{id}', 'EmpleadosController@destroy');

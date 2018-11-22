@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTCalificacionesTable extends Migration
+class CreateSysEmpleadosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,13 @@ class CreateTCalificacionesTable extends Migration
      */
     public function up()
     {
-        Schema::create('t_calificaciones', function (Blueprint $table) {
+        Schema::create('sys_empleados', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nombre')->nullable();
+            $table->string('email')->nullable();
+            $table->string('puesto')->nullable();
+            $table->string('fecha_nacimiento')->nullable();
+            $table->string('domicilio')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +31,6 @@ class CreateTCalificacionesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('t_calificaciones');
+        Schema::dropIfExists('sys_empleados');
     }
 }

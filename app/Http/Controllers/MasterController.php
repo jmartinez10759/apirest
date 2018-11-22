@@ -21,7 +21,6 @@ abstract class MasterController extends Controller
 
 	public function __construct()
 	{
-      #self::$ssl_ruta = ["verify" => $_SERVER['DOCUMENT_ROOT']. "/cacert.pem"];
 		self::$ssl_ruta = ["verify" => false];
 		self::$_client = new Client(self::$ssl_ruta);
 		self::$message_success = "¡Transacción Exitosa!";
